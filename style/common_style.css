@@ -1,0 +1,151 @@
+body {
+	background-color: WhiteSmoke;
+}
+
+header {
+	background-color: Lavender;
+	text-align: center;
+	padding: 2% 0%;
+	font-family: "Arial", sans-serif;
+	font-size: x-large;
+	font-weight: bold;
+	letter-spacing: .25em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.header img {
+	max-height: 140x;
+	max-width: 100px;
+	margin-left: 20px;
+}
+
+nav {
+	background-color: AliceBlue;
+	padding: 1% 2% 1% 2%;
+}
+
+#workarea {
+	background-color: White;
+	text-align: left;
+}
+
+.central-display-area {
+	padding: 1em 2% 2% 2%;
+	width: auto;
+	position: relative;
+}
+
+.image-set {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.thumbnail {
+	display: inline;
+}
+
+.thumbnail img {
+	max-height: 300px;
+	max-width: 300px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.fullscalephoto {
+	display: inline;
+}
+
+.fullscalephoto img {
+	max-height: 900px;
+	max-width: 900px;
+	object-fit: cover;
+}
+
+.centered-table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.report-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.report-image {
+	align-self: center;
+}
+
+.submit-reset {
+	padding: 1em;
+}
+
+.login-info {
+	float: right;
+}
+
+footer {
+	background-color: lavender;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+input.date-input {
+	width: 10em !important;
+}
+
+th {
+	padding: 5px;
+	font-size: 80%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align: left;
+}
+
+td:nth-child(1) {
+	font-weight: bold;
+}
+
+td {
+	padding: 5px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+form input[type="text"] {
+	width: 20em;
+}
+
+form input[type="email"] {
+	width: 20em;
+}
+
+form input[type="password"] {
+	width: 20em;
+}
+
+figcaption {
+	padding: 10px;
+	text-align: center;
+}

@@ -1,0 +1,20 @@
+                               README
+                       Version 1, 25 March 2018
+
+ Copyright (C) 2018 Hanns Schulz-Mirbach <http://www.schulz-mirbach.com/>
+ 
+                            Purpose of the application
+
+The Artworkgallery web application suports artists in publishing information about their work on the www. 
+The main features are
+- Master data administration for artists, artworks, artwork photos, other photos, technique, material
+- Pages for artist biography, artist works, reports about artist works, welcome page
+- Editable templates for all Pages of the application
+- Support for two languages in all pages (these are German and English in the published code)
+- Display of artwork photo galleries
+
+                            Installation instructions and copyright
+
+Installation instructions: in this source package under installation/InstallationInstruction
+
+Copyright and license information: in this source package under COPYING

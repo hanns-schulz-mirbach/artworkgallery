@@ -1,0 +1,83 @@
+                        Installation instructions
+                         Version 1, 25 March 2018
+
+ Copyright (C) 2018 Hanns Schulz-Mirbach <http://www.schulz-mirbach.com/>
+ 
+                            Prerequisites
+
+The Artworkgallery web application has been developed and tested with
+- PHP 7.1.9
+- MySQL 5.7.19
+- Apache httpd 2.4.27
+- Mozilla Firefox 57.0.3 (64 Bit)
+- Internet Explorer 11.0.9600.18837
+- Windows 7 Enterprise Edition 64 bit (all aforemnetioned applications running on one box)
+
+The application should work on any LAMP stack with PHP 7. 
+
+
+                            Unpacking the files
+
+Create a new directory on your web server (we call this the ROOT_DIR in the following). Unpack under 
+ROOT_DIR the files and sub-directories of the application. Ensure that the UTF-8 encoding of the files is 
+preserved. 
+
+
+                            Preparing the database
+
+You need to get access to an empty MySQL database schema with the permission to create new database tables. 
+Connect with a MySQL client (e.g. MySQL Workbench or MySQL command line) to the empty database and execute
+the scripts (*.sql) located under ROOT_DIR/installation/database_scripts. It does not matter in which sequence 
+you apply the database scripts.
+
+
+                            Configurimg the database connection
+                            
+Open with a text editor the file ROOT_DIR/db/database.php and replace after line 52 the entries for 
+dbHost (IP address or host name of your database server), dbName (name of your database schema), 
+dbUser (user to connect to the database), dbPassword (password for your database), dbPort (port of your database) 
+with the data for your database
+
+        $this->dbHost = '127.0.0.1';
+        $this->dbName = 'kiekmolwedderin';
+        $this->dbUser = 'hanns';
+        $this->dbPassword = 'hanns';
+        $this->dbPort = 3306;
+
+In a hosting environment you will get the aforementioned data from your hosting provider. 
+Be sure to keep the single quotes ' ' for the first four entries and save the file with UTF-8 encoding. 
+
+
+                            Configuring the access data for the Administration pages
+                                                 
+Open with a text editor the file ROOT_DIR/controller/login_controller.php and replace in lines 59 - 60 the entries for 
+$adminMail (that must be a valid e-mail address) and $adminPassword with the values ypu want to use
+
+        $adminMail = "your-namen@your-domain.your-domain-extension";
+        $adminPassword = "your-password";
+
+Ensure that the UTF-8 encoding of the file is preserved.
+
+
+                            Preparing the web server
+                            
+Register ROOT_DIR with your web server as the default directory for the application and the file 
+ROOT_DIR/index.php as the default file. Start the web server so that you can access the application with 
+a Web browser. 
+
+
+                            Accessing the Administration pages
+                            
+Type in the address line of your browser the Web URL of your deployment of the Artworkgallery application and 
+append the name admin.php (e.g. http://your-domain.com/artworkgallery/admin.php). That will open the login 
+page where you enter the credentials for accessing the Administration pages (the e-mail and password you 
+created in a previous step). These credentials will be cached for the duration of the session and you will 
+get links in the pages to directlly navigate to the Administration area. 
+
+
+
+
+
+
+
+
